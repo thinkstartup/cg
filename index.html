@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YI 2024 Certificates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img style="width: 100%;" src="/CertificateGenerator/certificates/logo.png" alt="logo">
+        <h1>College Youth Ideathon Certificates</h1>
+        <form id="certificate-form">
+            <div class="form-group">
+                <label for="uid">UID:</label>
+                <input type="text" id="uid" placeholder="Enter your UID" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="school">School: [ Note: Character limit upto 50 ]</label>
+                <input type="text" id="school" placeholder="Enter your school name" required>
+            </div>
+            <div class="form-group">
+                <label for="workshop">Certificate:</label>
+                <select id="workshop" required>
+                    <option value="">Select a Certificate</option>
+                    <option value="Workshop1">TOP 10</option>
+                    <option value="Workshop2">TOP 15</option>
+                    <option value="Workshop3">TOP 100</option>
+                    <option value="Workshop4">TOP 1000</option>
+                    <option value="Workshop5">TOP 15 Mentors</option>
+                    <option value="Workshop6">TOP 100 Mentors</option>
+                    <option value="Workshop7">TOP 1000 Mentors</option>
+                    <!-- <option value="Workshop7">YI Coordinator</option> -->
+                </select>                
+            </div>
+        
+            <button type="submit">Download Certificate</button>
+        </form>
+        <canvas id="certificate-canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
